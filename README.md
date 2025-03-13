@@ -1,6 +1,6 @@
 # Interior Design Market Targeting
 
-<img src="images/tract.png" style="zoom:50%;" />
+<img src="images/tract.png" style="width:40%;" />
 
 In this project, a Canadian interior design company aimed to optimize store locations and tailor product offerings to local preferences. The analysis leveraged **K-Means and BIRCH clustering** techniques to segment census tract data, pinpointing lucrative areas with high demand for interior design services. Following segmentation, **predictive modeling** was applied to predict median household income, offering insights into regional financial conditions. 
 
@@ -34,7 +34,7 @@ Construction periods span pre-1961 to 2021 across eight variables with moderate 
 
 After carefully examining the correlations across all five categories of attributes, I refined the dataset to include five input variables, with their correlation matrix displayed. 
 
-<img src="/Users/apple/Desktop/interior design/images/correlation.png" style="zoom:67%;" />
+<img src="images/correlation.png" style="width:50%;" />
 
 Among these, *Percent_house* and *percent_owner* are strongly correlated (0.86), so I retained *percent_house* and removed *percent_owner* to reduce redundancy. The final dataset includes four input variables and one numeric target variable, summarized below.
 
@@ -53,7 +53,7 @@ As the final step before model fitting, Inormalized the input variable *Total Ho
 
 To determine the optimal K, I assessed Inertia, Silhouette Score, and the Pseudo-F statistic. Inertia showed diminishing returns from K = 2 to 6, while K = 3 achieved the highest Silhouette Score and Pseudo-F statistic, indicating well-defined, compact clusters. Thus, we selected **K = 3** to segment the census tracts.
 
-<img src="/Users/apple/Desktop/interior design/images/number_k.png" style="zoom: 50%;" />
+<img src="images/number_k.png" style="width: 50%;" />
 
 ### **2.2 Detailed Profile of the Three Clusters**
 
@@ -73,17 +73,17 @@ Cluster 0 has the highest mean for Median Household Income, while Cluster 2 has 
 
 I began by examining the univariate distributions of dwelling-related variables, including *percent_house, percent_other,* and *percent_81_after.* the distribution of *percent_other* overlaps significantly across clusters, while *percent_house* and *percent_81_after* exhibit clear differences between clusters. 
 
-![](/Users/apple/Desktop/interior design/images/cluster distribution.png)
+<img src="images/cluster distribution.png" style="width:90%;" />
 
 Next, I explored the multivariate distribution of the key dwelling-related variables *percent_house* and *percent_81_after.* Cluster 1 has a high percentage of households in houses but a low percentage of households in modern dwellings. Cluster 0 combines a high percentage of households in houses with a high percentage in modern dwellings. On the other hand, Cluster 2 is marked by a low percentage of households in houses and shows no distinct pattern regarding the percentage of households in modern dwellings. 
 
-<img src="/Users/apple/Desktop/interior design/images/cluster_multivariate.png" style="zoom:67%;" />
+<img src="images/cluster_multivariate.png" style="width:50%;" />
 
 Then, I analyzed the univariate distributions of *Total Households* and *Median Household Income.* The distribution of *Total Households* exhibits considerable overlap across clusters, indicating minimal variation. In contrast, *Median Household Income* demonstrates significant differences between clusters. Cluster 2 predominantly contains values below $100,000, Cluster 1 represents middle-income values, and Cluster 0 comprises high-income values.
 
-<img src="/Users/apple/Desktop/interior design/images/household_distribution.png" style="zoom:67%;" />
+<img src="images/household_distribution.png" style="width:40%;" />
 
-<img src="/Users/apple/Desktop/interior design/images/income_distribution.png" style="zoom:67%;" />
+<img src="images/income_distribution.png" style="width:45%;" />
 
 #### **Defining the Clusters**
 
@@ -155,6 +155,6 @@ The tuned global model achieved a Mean Absolute Error (MAE) of 0.0514. The MAE f
 
 #### **Comparison and Final Remarks**
 
-![](/Users/apple/Desktop/interior design/images/Performance of model.png)
+<img src="images/Performance of model.png" style="width:70%;" />
 
 The three models showed similar performance overall. Based on cluster-specific results, an Artificial Neural Network (ANN) is recommended for predicting median household income in Clusters 0 and 1, while a K-Nearest Neighbors (KNN) model is best for Cluster 2.
