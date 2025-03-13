@@ -81,9 +81,9 @@ Next, I explored the multivariate distribution of the key dwelling-related varia
 
 Then, I analyzed the univariate distributions of *Total Households* and *Median Household Income.* The distribution of *Total Households* exhibits considerable overlap across clusters, indicating minimal variation. In contrast, *Median Household Income* demonstrates significant differences between clusters. Cluster 2 predominantly contains values below $100,000, Cluster 1 represents middle-income values, and Cluster 0 comprises high-income values.
 
-<img src="images/household_distribution.png" style="width:40%;" />
+<img src="images/household_distribution.png" style="width:60%;" />
 
-<img src="images/income_distribution.png" style="width:45%;" />
+<img src="images/income_distribution.png" style="width:65%;" />
 
 #### **Defining the Clusters**
 
