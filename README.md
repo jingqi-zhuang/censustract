@@ -4,9 +4,7 @@
 
 <img src="images/tract.png" style="width:40%;" />
 
-This project tackled that question for an interior design business aiming to optimize store locations and tailor product offerings to regional demand.
-
-The analysis leveraged K-Means and BIRCH clustering techniques to segment census tract data, pinpointing lucrative areas with high demand for interior design services. Following segmentation, predictive modeling was applied to predict median household income, offering insights into regional financial conditions. 
+This project tackled that question for an interior design business aiming to optimize store locations and tailor product offerings to regional demand. The analysis leveraged K-Means and BIRCH clustering techniques to segment census tract data, pinpointing lucrative areas with high demand for interior design services. Following segmentation, predictive modeling was applied to predict median household income, offering insights into regional financial conditions. 
 
 ## Step 1: Data Preparation
 
