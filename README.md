@@ -1,8 +1,12 @@
 # Interior Design Market Targeting
 
+**How do you find the most profitable region in Canada for business expansion?**
+
 <img src="images/tract.png" style="width:40%;" />
 
-In this project, a Canadian interior design company aimed to optimize store locations and tailor product offerings to local preferences. The analysis leveraged **K-Means and BIRCH clustering** techniques to segment census tract data, pinpointing lucrative areas with high demand for interior design services. Following segmentation, **predictive modeling** was applied to predict median household income, offering insights into regional financial conditions. 
+This project tackled that question for an interior design business aiming to optimize store locations and tailor product offerings to regional demand.
+
+The analysis leveraged K-Means and BIRCH clustering techniques to segment census tract data, pinpointing lucrative areas with high demand for interior design services. Following segmentation, predictive modeling was applied to predict median household income, offering insights into regional financial conditions. 
 
 ## Step 1: Data Preparation
 
